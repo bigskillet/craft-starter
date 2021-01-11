@@ -76,8 +76,7 @@ module.exports = {
     new WebpackManifestPlugin({
       fileName: 'assets/manifest.json',
       basePath: '/assets/',
-      filter: ({ name }) =>
-        name.endsWith(".js") || name.endsWith(".css") || name.endsWith(".map")
+      map: f => ({ ...f, name: f.path.replace(/-[a-f0-9]{8}/, '') })
     })
   ],
   optimization: {
