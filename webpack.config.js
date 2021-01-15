@@ -1,11 +1,11 @@
 const path = require('path');
 
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
 module.exports = {
   entry: {
@@ -32,22 +32,15 @@ module.exports = {
     ]
   },
   devtool: 'source-map',
-  devServer: {
-    proxy: {
-      '*': {
-        target: 'http://craft-starter.valet',
-        changeOrigin: true
-      }
-    },
-    contentBase: [
-      path.join(__dirname, './templates')
-    ],
-    watchContentBase: true,
-    writeToDisk: true,
-    overlay: true,
-    open: true
-  },
   plugins: [
+    new BrowserSyncPlugin({
+      proxy: 'http://craft-starter.valet',
+      files: [
+        'templates/**/*',
+        'public/assets/*'
+      ],
+      notify: false
+    }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: [
         '**/assets'
