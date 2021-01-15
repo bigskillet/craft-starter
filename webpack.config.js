@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: process.env.NODE_ENV == 'production'
-      ? 'assets/[name]-[contenthash:8].js'
+      ? 'assets/[name].[contenthash:8].js'
       : 'assets/[name].js',
     publicPath: '/'
   },
@@ -70,13 +70,13 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: process.env.NODE_ENV == 'production'
-        ? 'assets/[name]-[contenthash:8].css'
+        ? 'assets/[name].[contenthash:8].css'
         : 'assets/[name].css'
     }),
     new WebpackManifestPlugin({
       fileName: 'assets/manifest.json',
       basePath: '/assets/',
-      map: f => ({ ...f, name: f.path.replace(/-[a-f0-9]{8}/, '') })
+      map: f => ({ ...f, name: f.path.replace(/.[a-f0-9]{8}/, '') })
     })
   ],
   optimization: {

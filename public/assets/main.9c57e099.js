@@ -1,2 +1,2 @@
 (()=>{"use strict";console.log("It Works!")})();
-//# sourceMappingURL=main-dd84ccd5.js.map
+//# sourceMappingURL=main.9c57e099.js.map
