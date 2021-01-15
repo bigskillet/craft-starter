@@ -75,7 +75,6 @@ module.exports = {
     }),
     new WebpackManifestPlugin({
       fileName: 'assets/manifest.json',
-      basePath: '/assets/',
       map: f => ({ ...f, name: f.path.replace(/.[a-f0-9]{8}/, '') })
     })
   ],
