@@ -38,7 +38,7 @@ module.exports = {
       proxy: 'http://craft-starter.valet',
       files: [
         'templates/**/*',
-        'public/assets/*'
+        'src/**/*'
       ],
       notify: false
     }),
