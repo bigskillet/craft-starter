@@ -1,10 +1,14 @@
-dateModified: 1615676645
+dateModified: 1615734808
 email:
   fromEmail: matt@bigskillet.com
   fromName: 'Craft Starter'
   transportType: craft\mail\transportadapters\Sendmail
 plugins:
   assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cheat-sheet:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
