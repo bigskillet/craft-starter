@@ -47,7 +47,15 @@ module.exports = {
         'templates/**/*',
         'src/**/*'
       ],
-      notify: false
+      notify: false,
+      snippetOptions: {
+        rule: {
+          match: /<\/body>/i,
+          fn: (snippet, match) => {
+            return snippet + match;
+          }
+        }
+      }
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: [
