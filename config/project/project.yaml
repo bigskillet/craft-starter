@@ -1,4 +1,4 @@
-dateModified: 1617314780
+dateModified: 1617316006
 email:
   fromEmail: matt@bigskillet.com
   fromName: 'Craft Starter'
@@ -22,6 +22,10 @@ plugins:
           -
             - 9a2a272f-755b-4cc8-96ee-2ecd31b15c53
             - W3sibGFiZWwiOiJEYXNoYm9hcmQiLCJ1cmwiOiJkYXNoYm9hcmQiLCJmb250SWNvbiI6ImdhdWdlIn0seyJsYWJlbCI6IlVzZXJzIiwidXJsIjoidXNlcnMiLCJmb250SWNvbiI6InVzZXJzIn0seyJsYWJlbCI6IkdyYXBoUUwiLCJ1cmwiOiJncmFwaHFsIiwiaWNvbiI6IkBhcHBpY29ucy9ncmFwaHFsLnN2ZyIsInN1Ym5hdiI6eyJzY2hlbWFzIjp7ImxhYmVsIjoiU2NoZW1hcyIsInVybCI6ImdyYXBocWwvc2NoZW1hcyJ9LCJ0b2tlbnMiOnsibGFiZWwiOiJUb2tlbnMiLCJ1cmwiOiJncmFwaHFsL3Rva2VucyJ9LCJncmFwaGlxbCI6eyJsYWJlbCI6IkdyYXBoaVFMIiwidXJsIjoiZ3JhcGhpcWwiLCJleHRlcm5hbCI6dHJ1ZX19fSx7InVybCI6InV0aWxpdGllcyIsImxhYmVsIjoiVXRpbGl0aWVzIiwiZm9udEljb24iOiJ0b29sIiwiYmFkZ2VDb3VudCI6MH0seyJ1cmwiOiJzZXR0aW5ncyIsImxhYmVsIjoiU2V0dGluZ3MiLCJmb250SWNvbiI6InNldHRpbmdzIn0seyJ1cmwiOiJwbHVnaW4tc3RvcmUiLCJsYWJlbCI6IlBsdWdpbiBTdG9yZSIsImZvbnRJY29uIjoicGx1Z2luIn1d
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
