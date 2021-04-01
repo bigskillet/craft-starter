@@ -22,6 +22,9 @@ return [
         // Control panel trigger word
         'cpTrigger' => 'admin',
 
+        // Login redirect
+        // 'postCpLoginRedirect' => 'entries',
+
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => App::env('SECURITY_KEY'),
     ],
