@@ -6,6 +6,7 @@
     "focuslabllc/craft-cheat-sheet": "2.0.3",
     "verbb/cp-nav": "3.0.15",
     "verbb/expanded-singles": "1.1.3",
+    "verbb/redactor-tweaks": "2.0.4",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "require-dev": {

@@ -1,4 +1,4 @@
-dateModified: 1617316006
+dateModified: 1617931180
 email:
   fromEmail: matt@bigskillet.com
   fromName: 'Craft Starter'
@@ -30,6 +30,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  redactor-tweaks:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: pro
   live: true
