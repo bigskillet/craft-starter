@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ rev('/assets/main.css') }}">
     <script src="{{ rev('/assets/main.js') }}" defer></script>
   </head>
-  <body class="{{ craft.request.getSegment(1) ?: 'home' }} flex flex-col min-h-screen font-body">
+  <body class="{{ craft.app.request.getSegment(1) ?: 'home' }} flex flex-col min-h-screen font-body">
     <main class="flex-grow">
       {% block content %}
       {% endblock %}
